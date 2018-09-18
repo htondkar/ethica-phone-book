@@ -14,8 +14,6 @@ export const createNameInput = getFieldDecorator => {
   )
 }
 
-// ────────────────────────────────────────────────────────────────────────────────
-
 export const createPhoneInput = getFieldDecorator => {
   const phoneFieldHOC = getFieldDecorator('phone', {
     rules: [{ required: true, message: 'Phone number is required' }],

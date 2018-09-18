@@ -20,7 +20,12 @@ const addKey = (item, index) => {
 }
 
 const EntryList = ({ entries = [] }) => (
-  <Table dataSource={entries.map(addKey)} columns={columns} pagination={false} bordered={true} />
+  <Table
+    dataSource={entries.map(addKey)}
+    columns={columns}
+    pagination={false}
+    bordered={true}
+  />
 )
 
 export default EntryList

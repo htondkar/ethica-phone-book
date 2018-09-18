@@ -21,7 +21,7 @@ class PhoneBookContainer extends React.Component {
   }
 
   handleNewEntry = newEntry => {
-    this.setState(currentState => ({ entries: [newEntry, ...currentState.entries] }))
+    this.setState(({ entries }) => ({ entries: [newEntry, ...entries] }))
   }
 
   handleSearch = value => {

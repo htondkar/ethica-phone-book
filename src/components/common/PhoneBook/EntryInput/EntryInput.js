@@ -4,8 +4,6 @@ import { Form, Button } from 'antd'
 import * as formFields from './entryFormFields'
 import { hasErrors } from './util'
 
-import './entry-input.scss'
-
 const EntryInput = ({ onNewEntry, form }) => {
   const { getFieldDecorator, getFieldsError, getFieldError, resetFields } = form
 
