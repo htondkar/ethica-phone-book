@@ -18,10 +18,9 @@ class PhoneBookContainer extends React.Component {
     }
 
     this.state = initialState
-    this.queryEntries = filterEntryList(this.state.entries)
   }
 
-  handleNewEntry = ({ values: newEntry }) => {
+  handleNewEntry = newEntry => {
     this.setState(currentState => ({ entries: [newEntry, ...currentState.entries] }))
   }
 
@@ -30,7 +29,7 @@ class PhoneBookContainer extends React.Component {
   }
 
   render() {
-    const filteredEntriesList = this.queryEntries(this.state.search)
+    const filteredEntriesList = filterEntryList(this.state.entries)(this.state.search)
 
     return (
       <main className="phone-book">

@@ -14,8 +14,13 @@ const columns = [
   },
 ]
 
+const addKey = (item, index) => {
+  item.key = index
+  return item
+}
+
 const EntryList = ({ entries = [] }) => (
-  <Table dataSource={entries} columns={columns} pagination={false} bordered={true} />
+  <Table dataSource={entries.map(addKey)} columns={columns} pagination={false} bordered={true} />
 )
 
 export default EntryList

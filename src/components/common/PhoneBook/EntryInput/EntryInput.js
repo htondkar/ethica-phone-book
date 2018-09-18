@@ -13,7 +13,7 @@ const EntryInput = ({ onNewEntry, form }) => {
     event.preventDefault()
     form.validateFields((err, values) => {
       if (!err) {
-        onNewEntry({ values })
+        onNewEntry(values)
         resetFields()
         event.target.name.focus()
       }
