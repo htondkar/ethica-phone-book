@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import faker from 'faker'
 import { Layout } from 'antd'
 
-import PhoneBookContainer from './components/pages/PhoneBookContainer/PhoneBookContainer'
+import PhoneBookContainer from './components/pages/PhoneBookPage/PhoneBookContainer'
 
 import 'antd/dist/antd.css'
 import './app.scss'
